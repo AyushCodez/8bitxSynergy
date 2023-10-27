@@ -1,0 +1,7 @@
+version: '3'
+services:
+  8bit:
+    container_name: 8bit
+    image: 8bit
+    ports:
+      - "8000:8000"
