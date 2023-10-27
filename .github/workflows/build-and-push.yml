@@ -22,7 +22,7 @@ jobs:
         image: rohitshah1706/8bit
         tags: latest
         registry: docker.io
-        dockerfile: game/Dockerfile
+        dockerfile: Dockerfile
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }} 
 
