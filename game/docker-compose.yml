@@ -2,6 +2,6 @@ version: '3'
 services:
   8bit:
     container_name: 8bit
-    image: 8bit
+    image: rohitshah1706/8bit:latest
     ports:
-      - "8000:8000"
+      - "80:8000"
