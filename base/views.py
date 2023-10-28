@@ -130,7 +130,7 @@ def registerPage(request):
                 return redirect('participant_home')
             messages.error(request, 'Use iiitb mail id')
         else:
-            messages.error(request, 'An error occurred during registration (Ensure that you are not using the same email id, this error could have been caused by that)')
+            messages.error(request, 'An error occurred during registration (Ensure that you are not using the same email id, this error could have been caused by that)/Wrong')
 
     return render(request, 'login_register.html', {'form': form})
 
@@ -159,7 +159,7 @@ def participant_home(request):
                         user_1.gold +=d[a]
                         user_1.save()
                     else:
-                        return HttpResponse("Go to 8Bit checkpost and get your time increased by 10 minutes")
+                        return HttpResponse("Go to 8Bit checkpost and get your time increased by 12 minutes")
                 else:
                     messages.error(request,'Ooops Better luck next time ')
             else:
